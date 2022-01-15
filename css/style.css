@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    background: linear-gradient(hotpink, coral);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size:auto;
+    width:100;
+    height:100vh;
+;
+}
+.card{
+    background:url("/img/bg-arquitectura.jpg") 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 350px;
+    height: 500px;
+    color:white;
+    padding:20px;
+    margin:20px auto;
+    text-align: center;
+    box-shadow: 0 0 0 6px rgba(red,0,blue,alpha);
+}
+
+.img{
+    display:block;
+    background:steelblue;
+    width:220px;
+    height:220px;
+    margin: 10px auto;
+    color:white;
+    border-radius: 50%;
+   /* border-style: groove; 
+    object-fit:cover; Fijar imagenes*/
+}
+
+.titulo{
+    padding-bottom: inherit;
+}
