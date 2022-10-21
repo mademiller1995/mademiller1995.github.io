@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Website Starcuck</title>
+</head>
+<body>
+    <!--Hello madafucker-->
+    
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img class ="logo" src="img/logo_coco.png" alt="logo de empresa"></a>
+        <ul>
+            <li><a href="#">&#10224; Home</a></li>
+            <li><a href="#">&#8278; Menu</a></li>
+            <li><a href="#">&#8286; Noticias</a></li>
+            <li><a href="#">Cont&#64;ctanos</a></li>
+        </ul>
+        <ul>
+            <li class="contact_us"><a href="#">Búsqueda Empleo &#8595;</a></li>
+        </ul>
+    </header>
+    <!--first-->
+    <div class="content">
+        <div class="textBox">
+            <h2>¿Conoces<br> <span>COCO</span> ?</h2>
+            <p>Refrescate en cualquier época del año, con una bebida fría, caliente, templada, con/sin azúcar, hecho a tu medida, para todos los paladares.</p>
+            <p>Todas nuestras bebidas son personalizables, donde encontrarás la mejor calidad de fruta para tu bebida especial, con un toque diferente al resto</p>
+            <a href="#">Ver tendencias</a>
+        </div>
+        <!--2nd part-->
+        <div class="imgBox">
+            <img src="img/milktea1.png" alt="img1-matcha" class="starbucks">
+        </div>
+<!--3ra part-->
+        <ul class="thumb">
+            <li><img src="img/milktea1.png" onclick="imgSlider('img/milktea1.png'); ChangeCircleColor('orange')"></li>
+            <li><img src="img/milktea2.png" onclick="imgSlider('img/milktea2.png'); ChangeCircleColor('#DDC030')"></li>
+            <li><img src="img/milktea3.png"  onclick="imgSlider('img/milktea3.png'); ChangeCircleColor('#BF624E')"></li>
+        </ul>
+        <!--redes sociales-->
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+        </ul>
+    </div>
+</section>
+<!--another section-->
+<section class="shop-center">
+    <div class="desg-tienda">
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¡ESTAMOS EN BARCELONA!</h3>
+        <img src="img/coco-bcn.jpg" alt="">
+    </div>  
+</section>
+<!--jscript-->
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
+    }
+    function ChangeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+</script>
+</body>
+</html>
